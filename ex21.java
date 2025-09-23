@@ -24,6 +24,5 @@ public class ex21{
             fis.close();
             System.out.println("El nombre de vegades que apareix la lletra 'a' en el fitxer és: " + contador);
             in.close();
-            
     }
 }
