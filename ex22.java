@@ -37,5 +37,6 @@ public class ex22{
             System.out.print((char)n);
         }
         fis.close();
+        
     }
 }
