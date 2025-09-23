@@ -28,6 +28,7 @@ public class SaveText {
 
             fos.close();
 
+            
             FileInputStream fis = new FileInputStream(f);
 
             int n =0;
