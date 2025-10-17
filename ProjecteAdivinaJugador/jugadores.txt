@@ -1,0 +1,8 @@
+1;Cristiano Ronaldo;100
+2;Lionel Messi;95
+3;Ronaldinho;85
+4;Zlatan Ibrahimovic;80
+5;Ziyech;75
+6;Modric;70
+7;Mbappe;65
+8;Desire Doue;60
