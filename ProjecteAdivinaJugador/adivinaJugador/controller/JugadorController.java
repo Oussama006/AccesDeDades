@@ -14,7 +14,7 @@ public class JugadorController {
         try {
             Scanner jug = new Scanner(new File("jugadores.txt"));
 
-            System.out.println("\n⚽ ¡Bienvenido al juego de adivinar el jugador! ⚽\n");
+            System.out.println("\n ¡Bienvenido al juego de adivinar el jugador!\n");
 
             boolean seguir = true;
 

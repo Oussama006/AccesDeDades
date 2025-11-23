@@ -1,0 +1,12 @@
+{
+    "java.debug.settings.console": "integratedTerminal",
+    "java.project.referencedLibraries": [
+        "C:\\Users\\elham\\Downloads\\postgresql-42.7.8.jar"
+    ],
+    "java.configuration.runtimes": [
+        {
+            "name": "JavaSE-23",
+            "path": "C:\\Program Files\\Java\\jdk-23"
+        }
+    ]
+}
