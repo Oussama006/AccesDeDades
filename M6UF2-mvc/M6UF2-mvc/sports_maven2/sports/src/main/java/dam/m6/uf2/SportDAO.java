@@ -9,7 +9,7 @@ import java.util.List;
 
 import dam.m6.uf2.model.Sport;
 
-public class SportDAO implements DAO<Sport> {
+public class SportDAO {
 
     private Connection conn;
 
@@ -17,29 +17,12 @@ public class SportDAO implements DAO<Sport> {
         this.conn = conn;
     }
 
-    /**
-     * Añadir un deporte
-     */
-    @Override
-    public void add(Sport deporte) {
-        String sql = "INSERT INTO deportes (nombre) VALUES (?)";
-
-        try (PreparedStatement stmt = conn.prepareStatement(sql)) {
-            stmt.setString(1, deporte.getName());
-            stmt.executeUpdate();
-        } catch (SQLException e) {
-            System.out.println("Error al agregar deporte: " + e.getMessage());
-        }
-    }
-
-    @Override
-    public List<Sport> getAll() {
+    public List<Sport> listarDeportes() {
         List<Sport> lista = new ArrayList<>();
 
         String sql = "SELECT * FROM llistaSports()";
 
-        try (PreparedStatement stmt = conn.prepareStatement(sql); ResultSet rs = stmt.executeQuery()) {
-
+        try (PreparedStatement ps = conn.prepareStatement(sql); ResultSet rs = ps.executeQuery()) {
             while (rs.next()) {
                 lista.add(new Sport(
                         rs.getInt("id"),
@@ -48,9 +31,21 @@ public class SportDAO implements DAO<Sport> {
             }
 
         } catch (SQLException e) {
-            System.out.println("Error al obtener lista de deportes: " + e.getMessage());
+            System.out.println("Error listar deportes: " + e.getMessage());
         }
 
         return lista;
+    }
+
+    public void add(Sport s) {
+        String sql = "INSERT INTO deportes(nombre) VALUES (?)";
+
+        try (PreparedStatement ps = conn.prepareStatement(sql)) {
+            ps.setString(1, s.getNombre());
+            ps.executeUpdate();
+            System.out.println("Deporte añadido.");
+        } catch (SQLException e) {
+            System.out.println("Error añadiendo deporte: " + e.getMessage());
+        }
     }
 }

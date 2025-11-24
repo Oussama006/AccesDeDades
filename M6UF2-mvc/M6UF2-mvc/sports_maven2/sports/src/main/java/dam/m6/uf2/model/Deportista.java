@@ -2,30 +2,35 @@ package dam.m6.uf2.model;
 
 public class Deportista {
 
-    private int id;
-    private String name;
+    private int cod;
+    private String nombre;
     private int codDeporte;
+    private String deporte; 
 
-    public Deportista(int id, String name, int codDeporte) {
-        this.id = id;
-        this.name = name;
-        this.codDeporte = codDeporte;
+    public Deportista(String nombre, int cod) {
+        this.cod = cod;
+        this.nombre = nombre;
     }
 
-    public int getId() {
-        return id;
+    public Deportista(int cod, String nombre, String deporte) {
+        this.cod = cod;
+        this.nombre = nombre;
+        this.deporte = deporte;
     }
 
-    public String getName() {
-        return name;
+    public int getCod() {
+        return cod;
+    }
+
+    public String getNombre() {
+        return nombre;
     }
 
     public int getCodDeporte() {
         return codDeporte;
     }
 
-    @Override
-    public String toString() {
-        return id + " - " + name + " (sport " + codDeporte + ")";
+    public String getDeporte() {
+        return deporte;
     }
 }

@@ -9,7 +9,7 @@ import java.util.List;
 
 import dam.m6.uf2.model.Deportista;
 
-public class DeportistaDAO {
+public class DeportistaDAO implements DAO<Deportista> {
 
     private Connection conn;
 
@@ -17,68 +17,88 @@ public class DeportistaDAO {
         this.conn = conn;
     }
 
-    /** Añadir un deportista */
-    public void agregarDeportista(Deportista dep) {
-        String sql = "INSERT INTO deportistas (nombre, cod_deporte) VALUES (?, ?)";
+    @Override
+    public void add(Deportista d) {
+        String sql = "INSERT INTO deportistas(nombre, cod_deporte) VALUES (?, ?)";
 
-        try (PreparedStatement stmt = conn.prepareStatement(sql)) {
-            stmt.setString(1, dep.getName());
-            stmt.setInt(2, dep.getCodDeporte());
-            stmt.executeUpdate();
+        try (PreparedStatement ps = conn.prepareStatement(sql)) {
+            ps.setString(1, d.getNombre());
+            ps.setInt(2, d.getCodDeporte());
+            ps.executeUpdate();
+            System.out.println("Deportista añadido.");
         } catch (SQLException e) {
-            System.out.println("Error al agregar deportista: " + e.getMessage());
+            System.out.println("Error añadiendo deportista: " + e.getMessage());
         }
     }
 
-    /** Buscar deportistas por nombre (coincidencia parcial) */
-    public List<Deportista> buscarPorNombre(String nombre) {
+    @Override
+    public List<Deportista> getAll() {
         List<Deportista> lista = new ArrayList<>();
 
-        String sql = "SELECT cod, nombre, cod_deporte FROM deportistas " +
-                     "WHERE LOWER(nombre) LIKE LOWER(?)";
+        String sql = "SELECT * FROM deportistas";
 
-        try (PreparedStatement stmt = conn.prepareStatement(sql)) {
-
-            stmt.setString(1, "%" + nombre + "%");
-
-            ResultSet rs = stmt.executeQuery();
+        try (PreparedStatement ps = conn.prepareStatement(sql); ResultSet rs = ps.executeQuery()) {
 
             while (rs.next()) {
                 lista.add(new Deportista(
-                        rs.getInt("cod"),
                         rs.getString("nombre"),
-                        rs.getInt("cod_deporte")
+                        rs.getInt("cod")
                 ));
             }
 
         } catch (SQLException e) {
-            System.out.println("Error en búsqueda por nombre: " + e.getMessage());
+            System.out.println("Error obteniendo deportistas.");
         }
 
         return lista;
     }
 
-    /** Obtener deportistas según el ID del deporte usando llistaDeportistasDeSports() */
-    public List<Deportista> obtenerDeportistasDeDeporte(int idDeporte) {
+    public List<Deportista> listarPorDeporte(int idSport) {
         List<Deportista> lista = new ArrayList<>();
 
         String sql = "SELECT * FROM llistaDeportistasDeSports(?)";
 
-        try (PreparedStatement stmt = conn.prepareStatement(sql)) {
+        try (PreparedStatement ps = conn.prepareStatement(sql)) {
+            ps.setInt(1, idSport);
 
-            stmt.setInt(1, idDeporte);
-            ResultSet rs = stmt.executeQuery();
-
+            ResultSet rs = ps.executeQuery();
             while (rs.next()) {
                 lista.add(new Deportista(
-                        rs.getInt("cod"),
                         rs.getString("nombre"),
-                        rs.getInt("cod_deporte")
+                        rs.getInt("cod")
                 ));
             }
 
+        } catch (Exception e) {
+            System.out.println("Error función deportistas: " + e.getMessage());
+        }
+        return lista;
+    }
+
+    public List<Deportista> buscarPorNombre(String nombre) {
+        List<Deportista> lista = new ArrayList<>();
+
+        String sql = "SELECT d.cod, d.nombre, s.nombre AS deporte "
+                + "FROM deportistas d "
+                + "JOIN deportes s ON d.cod_deporte = s.cod "
+                + "WHERE d.nombre ILIKE ? "
+                + "ORDER BY d.cod";
+
+        try (PreparedStatement ps = conn.prepareStatement(sql)) {
+            ps.setString(1, "%" + nombre + "%");
+
+            try (ResultSet rs = ps.executeQuery()) {
+                while (rs.next()) {
+                    lista.add(new Deportista(
+                            rs.getInt("cod"),
+                            rs.getString("nombre"),
+                            rs.getString("deporte")
+                    ));
+                }
+            }
+
         } catch (SQLException e) {
-            System.out.println("Error al obtener deportistas de deporte: " + e.getMessage());
+            System.out.println("Error buscant atleta: " + e.getMessage());
         }
 
         return lista;

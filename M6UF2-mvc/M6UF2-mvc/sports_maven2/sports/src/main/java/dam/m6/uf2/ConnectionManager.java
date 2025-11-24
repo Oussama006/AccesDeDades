@@ -1,48 +1,44 @@
 package dam.m6.uf2;
 
+import java.io.File;
 import java.sql.Connection;
 import java.sql.DriverManager;
-import java.sql.SQLException;
+
+import javax.xml.parsers.DocumentBuilder;
+import javax.xml.parsers.DocumentBuilderFactory;
+
+import org.w3c.dom.Document;
 
 public class ConnectionManager {
 
-    private static String host = "";
-    private static String port = "";
-    private static String database = "";
-    private static String username = "";
-    private static String password = "";
-    private static Connection con;
-    private static String urlstring;
-
-    public ConnectionManager() {
+    public static Connection openConnection() {
+        return getConnection("database.xml");
     }
 
-    public static Connection getConnection(String config_file) {
-        ReadConfigXML config = new ReadConfigXML(config_file);
-
-        host = config.getHost();
-        port = config.getPort();
-        database = config.getDatabase();
-        username = config.getUser();
-        password = config.getPassword();
-
-        urlstring = "jdbc:postgresql://" + host + ":" + port + "/" + database; // Aquí heu de construir la URL de connexió
-
-        System.out.println("DEBUG: Dades obtingudes del fitxer XML -> " + host + " / " + port + " / " + database + " / " + username);
+    public static Connection getConnection(String xmlFile) {
 
         try {
-            try {
-                Class.forName("org.postgresql.Driver");
-                con = DriverManager.getConnection(urlstring, username, password);
-            } catch (SQLException ex) {
-                // log an exception. fro example:
-                System.out.println("Failed to create the database connection.");
-            }
-        } catch (Exception ex) {
-            // log an exception. for example:
-            System.out.println("Driver not found.");
-        }
-        return con;
-    }
+            File file = new File(xmlFile);
 
+            DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
+            DocumentBuilder dBuilder = dbFactory.newDocumentBuilder();
+
+            Document doc = dBuilder.parse(file);
+            doc.getDocumentElement().normalize();
+
+            String host = doc.getElementsByTagName("host").item(0).getTextContent();
+            String port = doc.getElementsByTagName("port").item(0).getTextContent();
+            String db = doc.getElementsByTagName("database").item(0).getTextContent();
+            String user = doc.getElementsByTagName("user").item(0).getTextContent();
+            String pass = doc.getElementsByTagName("password").item(0).getTextContent();
+
+            String url = "jdbc:postgresql://" + host + ":" + port + "/" + db;
+
+            return DriverManager.getConnection(url, user, pass);
+
+        } catch (Exception e) {
+            System.out.println("ERROR en ConnectionManager: " + e.getMessage());
+            return null;
+        }
+    }
 }
