@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<checkstyle version="8.45.1">
+<file name="C:\Users\elham\OneDrive\Escritorio\DAM\2n\Acces de dades\M6UF2-mvc\M6UF2-mvc\sports_maven2\sports\src\main\java\dam\m6\uf2\ConnectionManager.java">
+<error line="7" column="1" severity="error" message="Separación extra en el grupo de importación antes &apos;javax.xml.parsers.DocumentBuilder&apos;" source="com.puppycrawl.tools.checkstyle.checks.imports.ImportOrderCheck"/>
+<error line="10" column="1" severity="error" message="Separación extra en el grupo de importación antes &apos;org.w3c.dom.Document&apos;" source="com.puppycrawl.tools.checkstyle.checks.imports.ImportOrderCheck"/>
+<error line="12" column="1" severity="error" message="Clases de servicios públicos no deben tener un constructor público o por defecto." source="com.puppycrawl.tools.checkstyle.checks.design.HideUtilityClassConstructorCheck"/>
+<error line="12" column="1" severity="error" message="Falta el comentario Javadoc." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocTypeCheck"/>
+<error line="18" column="5" severity="error" message="Falta el comentario Javadoc." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocMethodCheck"/>
+<error line="39" column="11" severity="error" message="Capturar la excepción &apos;Exception&apos; no está permitido." source="com.puppycrawl.tools.checkstyle.checks.coding.IllegalCatchCheck"/>
+</file>
+<file name="C:\Users\elham\OneDrive\Escritorio\DAM\2n\Acces de dades\M6UF2-mvc\M6UF2-mvc\sports_maven2\sports\src\main\java\dam\m6\uf2\Controller.java">
+<error line="3" column="1" severity="error" message="Clases de servicios públicos no deben tener un constructor público o por defecto." source="com.puppycrawl.tools.checkstyle.checks.design.HideUtilityClassConstructorCheck"/>
+<error line="3" column="1" severity="error" message="Falta el comentario Javadoc." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocTypeCheck"/>
+<error line="5" column="5" severity="error" message="Falta el comentario Javadoc." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocMethodCheck"/>
+</file>
+<file name="C:\Users\elham\OneDrive\Escritorio\DAM\2n\Acces de dades\M6UF2-mvc\M6UF2-mvc\sports_maven2\sports\src\main\java\dam\m6\uf2\DAO.java">
+<error line="5" column="1" severity="error" message="Falta el comentario Javadoc." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocTypeCheck"/>
+</file>
+<file name="C:\Users\elham\OneDrive\Escritorio\DAM\2n\Acces de dades\M6UF2-mvc\M6UF2-mvc\sports_maven2\sports\src\main\java\dam\m6\uf2\DeportistaDAO.java">
+<error line="10" column="1" severity="error" message="Orden incorrecto para el import &apos;dam.m6.uf2.model.Deportista&apos;." source="com.puppycrawl.tools.checkstyle.checks.imports.ImportOrderCheck"/>
+<error line="10" column="1" severity="error" message="Separación extra en el grupo de importación antes &apos;dam.m6.uf2.model.Deportista&apos;" source="com.puppycrawl.tools.checkstyle.checks.imports.ImportOrderCheck"/>
+<error line="12" column="1" severity="error" message="Falta el comentario Javadoc." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocTypeCheck"/>
+<error line="56" column="5" severity="error" message="Falta el comentario Javadoc." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocMethodCheck"/>
+<error line="72" column="11" severity="error" message="Capturar la excepción &apos;Exception&apos; no está permitido." source="com.puppycrawl.tools.checkstyle.checks.coding.IllegalCatchCheck"/>
+<error line="78" column="5" severity="error" message="Falta el comentario Javadoc." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocMethodCheck"/>
+</file>
+<file name="C:\Users\elham\OneDrive\Escritorio\DAM\2n\Acces de dades\M6UF2-mvc\M6UF2-mvc\sports_maven2\sports\src\main\java\dam\m6\uf2\model\Deportista.java">
+<error line="3" column="1" severity="error" message="Falta el comentario Javadoc." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocTypeCheck"/>
+<error line="8" severity="error" message="Line has trailing spaces." source="com.puppycrawl.tools.checkstyle.checks.regexp.RegexpSinglelineCheck"/>
+<error line="15" column="5" severity="error" message="Falta el comentario Javadoc." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocMethodCheck"/>
+</file>
+<file name="C:\Users\elham\OneDrive\Escritorio\DAM\2n\Acces de dades\M6UF2-mvc\M6UF2-mvc\sports_maven2\sports\src\main\java\dam\m6\uf2\model\Sport.java">
+<error line="3" column="1" severity="error" message="Falta el comentario Javadoc." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocTypeCheck"/>
+</file>
+<file name="C:\Users\elham\OneDrive\Escritorio\DAM\2n\Acces de dades\M6UF2-mvc\M6UF2-mvc\sports_maven2\sports\src\main\java\dam\m6\uf2\SportDAO.java">
+<error line="10" column="1" severity="error" message="Orden incorrecto para el import &apos;dam.m6.uf2.model.Sport&apos;." source="com.puppycrawl.tools.checkstyle.checks.imports.ImportOrderCheck"/>
+<error line="10" column="1" severity="error" message="Separación extra en el grupo de importación antes &apos;dam.m6.uf2.model.Sport&apos;" source="com.puppycrawl.tools.checkstyle.checks.imports.ImportOrderCheck"/>
+<error line="12" column="1" severity="error" message="Falta el comentario Javadoc." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocTypeCheck"/>
+<error line="20" column="5" severity="error" message="Falta el comentario Javadoc." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocMethodCheck"/>
+<error line="40" column="5" severity="error" message="Falta el comentario Javadoc." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocMethodCheck"/>
+</file>
+<file name="C:\Users\elham\OneDrive\Escritorio\DAM\2n\Acces de dades\M6UF2-mvc\M6UF2-mvc\sports_maven2\sports\src\main\java\dam\m6\uf2\SportsManager.java">
+<error line="6" column="1" severity="error" message="Orden incorrecto para el import &apos;dam.m6.uf2.model.Deportista&apos;." source="com.puppycrawl.tools.checkstyle.checks.imports.ImportOrderCheck"/>
+<error line="6" column="1" severity="error" message="Separación extra en el grupo de importación antes &apos;dam.m6.uf2.model.Deportista&apos;" source="com.puppycrawl.tools.checkstyle.checks.imports.ImportOrderCheck"/>
+<error line="8" column="1" severity="error" message="Clases de servicios públicos no deben tener un constructor público o por defecto." source="com.puppycrawl.tools.checkstyle.checks.design.HideUtilityClassConstructorCheck"/>
+<error line="8" column="1" severity="error" message="Falta el comentario Javadoc." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocTypeCheck"/>
+<error line="10" column="5" severity="error" message="Falta el comentario Javadoc." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocMethodCheck"/>
+<error line="23" column="13" severity="error" message="switch sin etiqueta &quot;default&quot;." source="com.puppycrawl.tools.checkstyle.checks.coding.MissingSwitchDefaultCheck"/>
+<error line="34" column="22" severity="error" message="&apos;3&apos; es un número mágico." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
+<error line="38" column="22" severity="error" message="&apos;4&apos; es un número mágico." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
+<error line="43" column="22" severity="error" message="&apos;5&apos; es un número mágico." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
+</file>
+<file name="C:\Users\elham\OneDrive\Escritorio\DAM\2n\Acces de dades\M6UF2-mvc\M6UF2-mvc\sports_maven2\sports\src\main\java\dam\m6\uf2\SportsView.java">
+<error line="5" column="1" severity="error" message="Orden incorrecto para el import &apos;dam.m6.uf2.model.Deportista&apos;." source="com.puppycrawl.tools.checkstyle.checks.imports.ImportOrderCheck"/>
+<error line="8" column="1" severity="error" message="Falta el comentario Javadoc." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocTypeCheck"/>
+<error line="10" column="13" severity="error" message="La variable &apos;sc&apos; debe ser privada y tener métodos de acceso." source="com.puppycrawl.tools.checkstyle.checks.design.VisibilityModifierCheck"/>
+<error line="12" column="5" severity="error" message="Falta el comentario Javadoc." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocMethodCheck"/>
+<error line="29" column="5" severity="error" message="Falta el comentario Javadoc." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocMethodCheck"/>
+<error line="44" column="5" severity="error" message="Falta el comentario Javadoc." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocMethodCheck"/>
+<error line="51" column="5" severity="error" message="Falta el comentario Javadoc." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocMethodCheck"/>
+<error line="58" column="5" severity="error" message="Falta el comentario Javadoc." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocMethodCheck"/>
+</file>
+<file name="C:\Users\elham\OneDrive\Escritorio\DAM\2n\Acces de dades\M6UF2-mvc\M6UF2-mvc\sports_maven2\sports\src\main\java\dam\m6\uf2\User.java">
+<error line="3" column="1" severity="error" message="Falta el comentario Javadoc." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocTypeCheck"/>
+<error line="5" column="12" severity="error" message="La variable &apos;name&apos; debe ser privada y tener métodos de acceso." source="com.puppycrawl.tools.checkstyle.checks.design.VisibilityModifierCheck"/>
+<error line="6" column="12" severity="error" message="La variable &apos;password&apos; debe ser privada y tener métodos de acceso." source="com.puppycrawl.tools.checkstyle.checks.design.VisibilityModifierCheck"/>
+</file>
+<file name="C:\Users\elham\OneDrive\Escritorio\DAM\2n\Acces de dades\M6UF2-mvc\M6UF2-mvc\sports_maven2\sports\src\main\java\dam\m6\uf2\UserDAO.java">
+<error line="13" column="1" severity="error" message="Falta el comentario Javadoc." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocTypeCheck"/>
+<error line="29" column="60" severity="error" message="Debe tener al menos una sentencia." source="com.puppycrawl.tools.checkstyle.checks.blocks.EmptyBlockCheck"/>
+<error line="59" column="5" severity="error" message="Falta el comentario Javadoc." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocMethodCheck"/>
+</file>
+<file name="C:\Users\elham\OneDrive\Escritorio\DAM\2n\Acces de dades\M6UF2-mvc\M6UF2-mvc\sports_maven2\sports\src\test\java\dam\m6\uf2\AppTest.java">
+</file>
+</checkstyle>
