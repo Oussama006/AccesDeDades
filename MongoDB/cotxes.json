@@ -1,0 +1,227 @@
+[
+  {
+    "marca": "Audi",
+    "model": "RS6 Avant",
+    "potenciaCV": 600,
+    "preu": 135000,
+    "dataAlta": { "$date": "2025-01-10T10:00:00Z" },
+    "disponible": true,
+    "descripcio": "Familiar esportiu amb gran potència i tracció quattro"
+  },
+  {
+    "marca": "Mercedes",
+    "model": "E63 AMG",
+    "potenciaCV": 612,
+    "preu": 140000,
+    "dataAlta": { "$date": "2025-01-12T12:30:00Z" },
+    "disponible": false,
+    "descripcio": "Berlina esportiva d'alt rendiment"
+  },
+  {
+    "marca": "BMW",
+    "model": "M5 Competition",
+    "potenciaCV": 625,
+    "preu": 145000,
+    "dataAlta": { "$date": "2025-01-15T09:45:00Z" },
+    "disponible": true,
+    "descripcio": "Sedan esportiu amb tecnologia avançada"
+  },
+  {
+    "marca": "Audi",
+    "model": "RS3",
+    "potenciaCV": 400,
+    "preu": 75000,
+    "dataAlta": { "$date": "2025-01-18T11:20:00Z" },
+    "disponible": true,
+    "descripcio": "Compacte esportiu molt potent"
+  },
+  {
+    "marca": "Mercedes",
+    "model": "A45 AMG",
+    "potenciaCV": 421,
+    "preu": 72000,
+    "dataAlta": { "$date": "2025-01-20T15:10:00Z" },
+    "disponible": false,
+    "descripcio": "Compacte esportiu amb tracció integral"
+  },
+  {
+    "marca": "BMW",
+    "model": "M3",
+    "potenciaCV": 510,
+    "preu": 98000,
+    "dataAlta": { "$date": "2025-01-22T10:00:00Z" },
+    "disponible": true,
+    "descripcio": "Clàssic esportiu amb prestacions extremes"
+  },
+  {
+    "marca": "Audi",
+    "model": "R8",
+    "potenciaCV": 570,
+    "preu": 170000,
+    "dataAlta": { "$date": "2025-01-25T14:00:00Z" },
+    "disponible": true,
+    "descripcio": "Superesportiu amb motor V10"
+  },
+  {
+    "marca": "Mercedes",
+    "model": "C63 AMG",
+    "potenciaCV": 476,
+    "preu": 95000,
+    "dataAlta": { "$date": "2025-01-27T09:30:00Z" },
+    "disponible": false,
+    "descripcio": "Berlina esportiva amb motor V8"
+  },
+  {
+    "marca": "BMW",
+    "model": "M2",
+    "potenciaCV": 460,
+    "preu": 82000,
+    "dataAlta": { "$date": "2025-01-29T16:00:00Z" },
+    "disponible": true,
+    "descripcio": "Cupè compacte d'alt rendiment"
+  },
+  {
+    "marca": "Audi",
+    "model": "RS7",
+    "potenciaCV": 600,
+    "preu": 145000,
+    "dataAlta": { "$date": "2025-02-01T11:00:00Z" },
+    "disponible": true,
+    "descripcio": "Berlina esportiva de luxe"
+  },
+  {
+    "marca": "Mercedes",
+    "model": "GT 63 AMG",
+    "potenciaCV": 585,
+    "preu": 165000,
+    "dataAlta": { "$date": "2025-02-03T13:00:00Z" },
+    "disponible": false,
+    "descripcio": "Coupé esportiu d'altes prestacions"
+  },
+  {
+    "marca": "BMW",
+    "model": "M8",
+    "potenciaCV": 625,
+    "preu": 180000,
+    "dataAlta": { "$date": "2025-02-05T10:15:00Z" },
+    "disponible": true,
+    "descripcio": "Gran turisme esportiu de luxe"
+  },
+  {
+    "marca": "Audi",
+    "model": "RS Q8",
+    "potenciaCV": 600,
+    "preu": 160000,
+    "dataAlta": { "$date": "2025-02-07T09:00:00Z" },
+    "disponible": true,
+    "descripcio": "SUV esportiu d'alt rendiment"
+  },
+  {
+    "marca": "Mercedes",
+    "model": "GLE 63 AMG",
+    "potenciaCV": 612,
+    "preu": 155000,
+    "dataAlta": { "$date": "2025-02-09T12:00:00Z" },
+    "disponible": false,
+    "descripcio": "SUV esportiu amb gran potència"
+  },
+  {
+    "marca": "BMW",
+    "model": "X5 M",
+    "potenciaCV": 625,
+    "preu": 150000,
+    "dataAlta": { "$date": "2025-02-11T15:30:00Z" },
+    "disponible": true,
+    "descripcio": "SUV esportiu de luxe"
+  },
+  {
+    "marca": "Audi",
+    "model": "TT RS",
+    "potenciaCV": 400,
+    "preu": 70000,
+    "dataAlta": { "$date": "2025-02-13T10:00:00Z" },
+    "disponible": true,
+    "descripcio": "Cupè esportiu compacte"
+  },
+  {
+    "marca": "Mercedes",
+    "model": "SL 63 AMG",
+    "potenciaCV": 585,
+    "preu": 175000,
+    "dataAlta": { "$date": "2025-02-15T11:45:00Z" },
+    "disponible": false,
+    "descripcio": "Roadster esportiu de luxe"
+  },
+  {
+    "marca": "BMW",
+    "model": "Z4 M40i",
+    "potenciaCV": 340,
+    "preu": 65000,
+    "dataAlta": { "$date": "2025-02-17T09:20:00Z" },
+    "disponible": true,
+    "descripcio": "Roadster esportiu"
+  },
+  {
+    "marca": "Audi",
+    "model": "S5",
+    "potenciaCV": 354,
+    "preu": 68000,
+    "dataAlta": { "$date": "2025-02-19T14:10:00Z" },
+    "disponible": true,
+    "descripcio": "Cupè esportiu equilibrat"
+  },
+  {
+    "marca": "Mercedes",
+    "model": "CLA 45 AMG",
+    "potenciaCV": 421,
+    "preu": 69000,
+    "dataAlta": { "$date": "2025-02-21T16:30:00Z" },
+    "disponible": true,
+    "descripcio": "Berlina compacta esportiva"
+  },
+  {
+    "marca": "BMW",
+    "model": "M4",
+    "potenciaCV": 510,
+    "preu": 105000,
+    "dataAlta": { "$date": "2025-02-23T10:00:00Z" },
+    "disponible": false,
+    "descripcio": "Cupè esportiu d'alt rendiment"
+  },
+  {
+    "marca": "Audi",
+    "model": "RS5",
+    "potenciaCV": 450,
+    "preu": 98000,
+    "dataAlta": { "$date": "2025-02-25T13:00:00Z" },
+    "disponible": true,
+    "descripcio": "Cupè esportiu potent i elegant"
+  },
+  {
+    "marca": "Mercedes",
+    "model": "AMG GT",
+    "potenciaCV": 530,
+    "preu": 160000,
+    "dataAlta": { "$date": "2025-02-27T09:45:00Z" },
+    "disponible": false,
+    "descripcio": "Esportiu pur de la gamma AMG"
+  },
+  {
+    "marca": "BMW",
+    "model": "i4 M50",
+    "potenciaCV": 544,
+    "preu": 72000,
+    "dataAlta": { "$date": "2025-03-01T11:00:00Z" },
+    "disponible": true,
+    "descripcio": "Esportiu elèctric d'alt rendiment"
+  },
+  {
+    "marca": "Audi",
+    "model": "RS e-tron GT",
+    "potenciaCV": 637,
+    "preu": 150000,
+    "dataAlta": { "$date": "2025-03-03T15:00:00Z" },
+    "disponible": true,
+    "descripcio": "Esportiu elèctric de luxe"
+  }
+]
